@@ -1,0 +1,1 @@
+# plugins-auto-login-for-sakura-rental-server
