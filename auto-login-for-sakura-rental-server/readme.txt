@@ -4,7 +4,7 @@ Tags: login, auto-login, token, cli
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: auto-login-for-sakura-rental-server
@@ -50,7 +50,9 @@ Example:
 Token history is stored in the user meta key `sakura_auto_login_history`.  
 You can check it via WP-CLI:
 
+
     wp user meta get <user_id> sakura_auto_login_history
+
 
 === Auto-login URL format ===
 
@@ -84,9 +86,15 @@ Anyone with the URL can log in as the target user until the token expires. Alway
 = 1.0.2 =
 * Internal changes release
 
+= 1.0.3 =
+* Readme changes release
+
 == Upgrade Notice ==
 = 1.0.1 =
 * Fixed a bug. Users should update.
 
 = 1.0.2 =
 * Internal changes. Users should update.
+
+= 1.0.3 =
+* Readme changes only.

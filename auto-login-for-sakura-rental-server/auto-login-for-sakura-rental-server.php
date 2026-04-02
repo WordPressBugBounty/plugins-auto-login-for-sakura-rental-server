@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Auto Login for Sakura Rental Server
  * Description: Provides one-time, time-limited auto-login URLs using HMAC signatures.
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: SAKURA internet Inc.
  * Requires at least: 5.0
  * Tested up to: 6.8
