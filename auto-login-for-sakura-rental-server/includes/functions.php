@@ -199,6 +199,9 @@ function sakura_auto_login_get_all_tokens() {
     // NOTE: オブジェクトキャッシュ有効時、キャッシュが残る場合がある
     wp_cache_delete(SAKURA_AUTO_LOGIN_TOKENS_OPTION, 'options');
     $tokens = get_option(SAKURA_AUTO_LOGIN_TOKENS_OPTION);
+    if (!is_array($tokens)) {
+        $tokens = [];
+    }
     $now = time();
     $tokens = array_filter($tokens, function($item) use ($now) {
         return isset($item['expiresAt']) && $item['expiresAt'] >= $now;
